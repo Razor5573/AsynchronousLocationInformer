@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" fillWidth="false" prefHeight="800.0" prefWidth="800.0" spacing="20.0" style="-fx-background-color: #3e3d39;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.nsu.kalugin.fxasynclocationinformer.Informer">
+   <AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #5E2750;">
+      <children>
+          <Button layoutX="317.0" layoutY="43.0" onAction="#onFirstRequestClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3e3d39;" text="Get coordinates and names" textFill="WHITE">
+            <padding>
+               <Insets bottom="5.0" top="5.0" />
+            </padding>
+         </Button>
+         <Button layoutX="317.0" layoutY="75.0" onAction="#onSecondRequestClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3e3d39;" text="Get weather by coordinates" textFill="WHITE">
+            <padding>
+               <Insets bottom="5.0" top="5.0" />
+            </padding>
+         </Button>
+         <Button layoutX="317.0" layoutY="107.0" onAction="#onThirdRequestClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3e3d39;" text="Get interesting places" textFill="WHITE">
+            <padding>
+               <Insets bottom="5.0" top="5.0" />
+            </padding>
+         </Button>
+         <Button layoutX="317.0" layoutY="139.0" onAction="#onFourthRequestClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3e3d39;" text="Get description by ID" textFill="WHITE">
+            <padding>
+               <Insets bottom="5.0" top="5.0" />
+            </padding>
+         </Button>
+         <TextField fx:id="locationField" layoutX="287.0" layoutY="504.0" onAction="#onEnterPress" prefHeight="25.0" prefWidth="223.0" promptText="Location" />
+       <AnchorPane layoutX="110.0" layoutY="558.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+         <ScrollPane fx:id="scrollArea" layoutX="120.0" layoutY="193.0" prefHeight="273.0" prefWidth="556.0">
+            <content>
+               <TextArea fx:id="outputArea" prefHeight="271.0" prefWidth="554.0" />
+            </content>
+         </ScrollPane>
+         <BorderPane prefHeight="172.0" prefWidth="800.0" />
+      </children>
+   </AnchorPane>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+</VBox>
